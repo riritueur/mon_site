@@ -77,51 +77,61 @@
     <section class="gris">
       <br><br>
       
-     <table class="table table-bordered table-hover table-light table-responsive-sm">
+     <table class="table table-bordered table-hover table-light table-responsive-sm  table-bordered">
         <thead>
           <tr  class="table-dark">
-            <th scope="col">Domaine</th>
-            <th scope="col">Niveau</th>
+            <th scope="col" class="text-center">Domaine</th>
+            <th scope="col" class="text-center">jsp mdr</th>
+            <th scope="col" class="text-center">Niveau</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Java</td>
+            <td class="text-center  table-justify">Java</td>
             <td><div class="progress">
                   <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td>YEAH YEAH</td>
+            <td class="text-center  table-justify">HTML et CSS</td>
             <td><div class="progress">
                   <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td>You make the sunshine brighter<br/>than joris day's</td>
+            <td class="text-center table-justify">PhP</td>
             <td><div class="progress">
                   <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td>Boom boom boomboom</td>
+            <td class="text-center  table-justify">C</td>
             <td><div class="progress">
                   <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
                  </div>
-              </td>
+            </td>
           </tr>
           <tr>
-            <!-- <td colspan="2">Larry the Bird</td> -->
-            <td>@twitter</td>
+            <td class="text-center  table-justify">Bash (Linux)</td>
+            <td><div class="progress">
+                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                 </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center  table-justify">SQL & PLSQL</td>
+            <td><div class="progress">
+                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                 </div>
+            </td>
           </tr>
         </tbody>
       </table>
-      
+
       <br><br><br>
-      <br><br><br><br><br>
     </section>
     
     
