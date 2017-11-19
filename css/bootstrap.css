@@ -93,10 +93,12 @@
 }
 
 .gris {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
 }
 
-
+.lel {
+  max-width: 100vh !important;
+}
 .home {
     padding-top: 55px;
     background-image: url(../Code1.jpg);
@@ -116,12 +118,37 @@
     height: 50vh;
     background-attachment: fixed;
 }
+ /**border: 1px solid #595959;**/
 
+.cv {
+    width: 70%;
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid grey;
+}
+
+.test {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.2)),url(../Code2.png);
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    background-position: center;
+    background-attachment: scroll;
+    color: #fff;
+}
 
 .logo {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.middle {
+  vertical-align: middle!important;
 }
 
 .nom {
@@ -141,7 +168,7 @@
   transition: all 0.2s;
 }
 
-.container-fluid .text-center::after {
+.sous_menus::after {
     display: block;
     height: 2px;
     background-color: #e67e22;
@@ -152,16 +179,40 @@
     margin-bottom: 100px;
 }
 
+.sous_menus {
+  text-align: center !important;
+}
+
+
 .table-justify {
   padding : 0;
   width: 15%;
   text-align: justify;
 }
 
-
 nav .nom2:hover {
   color : black;
   transition: all 0.2s;
+}
+
+.java {
+  background-color: #ff884d !important;
+}
+
+.linux {
+  background-color: #adad85 !important;
+}
+
+.php {
+  background-color: #7171f4 !important;
+}
+
+.sql {
+  background-color: #478565 !important;
+}
+
+.c {
+  background-color: #8f3d3d !important;
 }
 
 .titreAlert {
@@ -1582,7 +1633,8 @@ pre code {
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 0 0.05rem rgba(255,255,255, 0.85); 
+  box-shadow: 0 0 0 0.1rem rgba(200,200,200, 0.85); 
+  color: black;
 }
 
 .table th,
@@ -1616,7 +1668,7 @@ pre code {
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #e9ecef;
+  border: 1px solid #b3b3b3;
 }
 
 .table-bordered thead th,

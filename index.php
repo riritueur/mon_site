@@ -43,11 +43,9 @@
       </nav>
       
     
-    <section class="home" id="hom">
-        <div class="container-fluid">
+    <section class="home container-fluid" id="hom" >
           <h1 class="titre">Wesh la famille</h1>
           <p class="soustitre">Bienvenue sur mon profil.</p>
-        </div>
     </section>
     
     
@@ -57,80 +55,87 @@
          <!-- Image centré -->
           <img src="./code.svg" class="rounded mx-auto d-block" alt="logo" height="200px" width="200px">
           <!-- Hover tooltip -->
-          <h2 class="text-center" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici" id="apropos">À propos :</h2>
+          <h2 class="sous_menus" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici" id="apropos">À propos</h2>
           <p class="nom2">Petite description de ma vie</p>
+          <br><br>
+          
+            <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
+              Mon CV
+            </button>
+          
+          <div class="collapse" id="CV">
+            <div class="card card-body">
+              <iframe src="CV.pdf"  class="cv"></iframe>
+            </div>
+          </div>
+          
+          <br><br><br>
         </div>
-        <p><abbr title="jsp mdr">definition ?</abbr></p>
-      <br><br><br><br><br>
     </section>
     
-    
-    <section class="home" id="hom2">
-        <div class="container-fluid">
-          
-          <h1 class="titre" id="competence">Compétences</h1>
-          
-          <p class="soustitre">Bientôt dispo les potos.</p>
-        </div>
-    </section>
-    
-    <section class="gris">
-      <br><br>
+    <section class="gris test container-fluid">
+      <h2 class="sous_menus" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici" id="apropos">Compétences</h2>
       
-     <table class="table table-bordered table-hover table-light table-responsive-sm  table-bordered">
+     <table class="table table-hover table-light table-bordered">
         <thead>
           <tr  class="table-dark">
-            <th scope="col" class="text-center">Domaine</th>
-            <th scope="col" class="text-center">jsp mdr</th>
+            <th scope="col" class="text-center">Language</th>
+            <th scope="col" class="text-center">Détails</th>
             <th scope="col" class="text-center">Niveau</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="text-center  table-justify">Java</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          <tr class="lel">
+            <td class="text-center middle table-justify"><strong>Java</strong></td>
+            <td class="text-center  table-justify">Application, GUI (Swing), UML, récursivité, Git(Hub)</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar java progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><strong>85%</strong></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td class="text-center  table-justify">HTML et CSS</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            <td class="text-center middle table-justify"><strong>HTML et CSS</strong></td>
+            <td class="text-center  table-justify">Sites webs, référencement, style graphique (<a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>)</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><strong>70%</strong></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td class="text-center table-justify">PhP</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <td class="text-center middle table-justify"><strong>PhP et JavaScript</strong></td>
+            <td class="text-center  table-justify">Cookies, connection à une base données, animation</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar php progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><strong>55%</strong></div>
                  </div>
               </td>
           </tr>
           <tr>
-            <td class="text-center  table-justify">C</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+            <td class="text-center middle table-justify"><strong>Bash (Linux)</strong></td>
+            <td class="text-center  table-justify">Script SH, serveur SSH, environnement Linux</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar linux progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"> <strong>70%</strong></div>
                  </div>
             </td>
           </tr>
           <tr>
-            <td class="text-center  table-justify">Bash (Linux)</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+            <td class="text-center middle table-justify"><strong>SQL et PLSQL</strong></td>
+            <td class="text-center lel">Création et modification de bases de données, MySQL, Oracle, Postgre</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar sql progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"> <strong>65%</strong></div>
                  </div>
             </td>
           </tr>
           <tr>
-            <td class="text-center  table-justify">SQL & PLSQL</td>
-            <td><div class="progress">
-                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+            <td class="text-center middle table-justify"><strong>C</strong></td>
+            <td class="text-center  table-justify">Programmation basique, utilisation méthodes bash</td>
+            <td class="middle"><div class="progress">
+                  <div class="progress-bar c bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><strong>55%</strong></div>
                  </div>
             </td>
           </tr>
+          
         </tbody>
       </table>
-
       <br><br><br>
     </section>
     
