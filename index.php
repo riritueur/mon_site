@@ -52,7 +52,7 @@
 
 
   <section class="home container-fluid" id="hom">
-    <h1 class="titre">Richhard Peres</h1>
+    <h1 class="titre">Richard Peres</h1>
     <p class="soustitre">Bienvenue sur mon profil.</p>
   </section>
 
