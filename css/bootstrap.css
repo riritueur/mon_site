@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@media (min-width: 300px) {
+@media (min-width: 100px) {
   .titre {
     font-size: 4rem;
     font-weight: 300;
@@ -16,6 +16,17 @@
     font-size: 1.25rem;
     font-weight: 300;
     color: #cccccc;
+  }
+  
+  .description {
+    margin-left: 3vh;
+    margin-right: 3vh;
+    display: block;
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 4vh;
+    background-color: #f9f9f9;
+    text-align: justify;
   }
 }
 @media (min-width: 400px) {
@@ -29,6 +40,17 @@
     font-size: 2rem;
     font-weight: 300;
     color: #cccccc;
+  }
+  
+  .description {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    display: block;
+    vertical-align: middle;
+    text-align: justify ;
+    font-size: 18px;
+    padding: 4vh;
+    background-color: #f9f9f9;
   }
 }
 @media (min-width: 576px) {
@@ -44,6 +66,17 @@
     font-weight: 300;
     color: #cccccc;
   }
+  
+  .description {
+    margin-left: 7vh;
+    margin-right: 7vh;
+    display: block;
+    vertical-align: middle;
+    text-align: center !important;
+    font-size: 18px;
+    padding: 5vh;
+    background-color: #f9f9f9;
+  }
 }
 
 @media (min-width: 768px) {
@@ -58,6 +91,17 @@
     font-size: 2rem;
     font-weight: 300;
     color: #cccccc;
+  }
+  
+  .description {
+    margin-left: 7vh;
+    margin-right: 7vh;
+    display: block;
+    vertical-align: middle;
+    text-align: center !important;
+    font-size: 18px;
+    padding: 5vh;
+    background-color: #f9f9f9;
   }
 }
 
@@ -75,6 +119,17 @@
     font-weight: 300;
     color: #cccccc;
   }
+  
+  .description {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    display: block;
+    vertical-align: middle;
+    text-align: center !important;
+    font-size: 18px;
+    padding: 5vh;
+    background-color: #f9f9f9;
+  }
 }
 @media (min-width: 1201px) {
   .titre {
@@ -90,6 +145,18 @@
     font-weight: 300;
     color: #cccccc;
   }
+  
+  .description {
+  display: block;
+  vertical-align: middle;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  text-align: center !important;
+  font-size: 18px;
+  padding: 5vh;
+  background-color: #f9f9f9;
+  
+}
 }
 
 .gris {
@@ -174,16 +241,21 @@
   transition: all 0.2s;
 }
 
-.description {
-  display: block;
-  vertical-align: middle;
-  margin-left: 20vh;
-  margin-right: 20vh;
-  text-align: center !important;
-  font-size: 18px;
-  padding: 5vh;
-  background-color: #f9f9f9;
-  
+.contactSection {
+  background-color: #e6e6e6;
+  padding-bottom: 5vh;
+}
+
+.message {
+  padding: 20px 40px 20px 40px !important;
+}
+
+.contact {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 5vh 10vh 7vh 10vh;
 }
 
 .dl {

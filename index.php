@@ -64,7 +64,7 @@
       <img src="Durif_8.jpg" class="photo mx-auto d-block" alt="logo" height="200px" width="200px" id="apropos">
       <!-- Hover tooltip -->
       <h2 class="sous_menus" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici">À propos</h2>
-      <span class="border border-secondary nom2 rounded description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.<br/><br/>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</span>
+      <span class="border border-secondary rounded description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.<br/><br/>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</span>
       <br><br>
 
       <button class="btn btn-danger btnCV" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
@@ -155,9 +155,40 @@
   </section>
 
 
-  <section class="container-fluid" id="hom3">
-    <h1 class="titre" id="contact">Contact</h1>
-    <p class="soustitre">Email et coordonnées</p>
+  <section class="container-fluid contactSection">
+    <br/><br/><br/><br/>
+    <div class="contact border border-secondary rounded">
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Richard">
+          </div>
+          <div class="col">
+            <label for="nom" class="col-sm-2 col-form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Peres">
+          </div>
+        </div><br/>
+        <div class="form-group row">
+          <label for="mail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="mail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="message" class="col-sm-2 col-form-label">Message</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control message" id="message" placeholder="Votre text ...">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+        </div>
+      </form>
+      <br/><br/><br/><br/>
+    </div>
   </section>
 
   <!-- Change le fond -->
