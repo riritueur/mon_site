@@ -52,7 +52,7 @@
 
 
   <section class="home container-fluid" id="hom">
-    <h1 class="titre">Wesh la famille</h1>
+    <h1 class="titre">Richhard Peres</h1>
     <p class="soustitre">Bienvenue sur mon profil.</p>
   </section>
 
@@ -67,7 +67,7 @@
       <span class="border border-secondary rounded description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.<br/><br/>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</span>
       <br><br>
 
-      <button class="btn btn-danger btnCV" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
+      <button class="btn btn-dark btnCV" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
         Mon CV
       </button>
 
@@ -84,7 +84,7 @@
   </section>
 
   <section class="gris back container-fluid">
-    <h2 class="sous_menus" onclick="fond()" id="competences">Compétences</h2>
+    <h2 class="sous_menus" id="competences">Compétences</h2>
 
     <table class="table table-hover table-light table-bordered">
       <thead>
@@ -156,46 +156,54 @@
 
 
   <section class="container-fluid contactSection">
-    <br/><br/><br/><br/>
+    <br/><br/>
+    <h2 class="sous_menus" id="contact">Contact</h2>
     <div class="contact border border-secondary rounded">
-      <form>
+      <p class="text-center">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
+      <form action="mailing.php" method="post">
         <div class="row">
           <div class="col">
-            <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
-            <input type="text" class="form-control" id="prenom" placeholder="Richard">
+            <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
+            <input type="text" class="form-control" name="prenom" placeholder="Richard">
           </div>
           <div class="col">
-            <label for="nom" class="col-sm-2 col-form-label">Nom</label>
-            <input type="text" class="form-control" id="nom" placeholder="Peres">
+            <label for="nom" class="col-sm-2 col-form-label"><strong>Nom</strong></label>
+            <input type="text" class="form-control" name="nom" placeholder="Peres">
           </div>
         </div><br/>
         <div class="form-group row">
-          <label for="mail" class="col-sm-2 col-form-label">Email</label>
+          <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="mail" placeholder="Email">
+            <input type="email" class="form-control" name="email" placeholder="richardperes.info@gmail.com">
           </div>
         </div>
         <div class="form-group row">
-          <label for="message" class="col-sm-2 col-form-label">Message</label>
+          <label for="objet" class="col-sm-2 col-form-label"><strong>Objet</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control message" id="message" placeholder="Votre text ...">
+            <input type="text" class="form-control" name="objet" placeholder="Proposition post">
           </div>
         </div>
         <div class="form-group row">
+          <label for="message" class="col-sm-2 col-form-label"><strong>Message</strong></label>
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <textarea type="text" class="form-control message" name="message" placeholder="Votre message ..."></textarea>
           </div>
         </div>
+        <button type="submit" class="btn btn-dark centre">Envoyer</button>
       </form>
-      <br/><br/><br/><br/>
     </div>
   </section>
 
-  <!-- Change le fond -->
-  <button type="button" class="btn btn-outline-dark" onclick="fond()">Change le fond !</button>
+  <footer></footer>
 
-  <!-- Button alert JS -->
-  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Bouton alert JS</button>
+  <!-- Change le fond 
+<button type="button" class="btn btn-outline-dark" onclick="fond()">Change le fond !</button>
+-->
+
+
+  <!-- Button alert JS 
+ <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Bouton alert JS</button>-->
+
 
   <?php include("alertjs.php"); ?>
 
