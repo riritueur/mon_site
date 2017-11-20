@@ -74,8 +74,10 @@
       <div class="collapse" id="CV">
         <br/>
         <div class="card card-body">
-          <a href="CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="Entypo+/Entypo+/download.svg" class="middle" width="35" height="35" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"></a>
-          <object class="cv" data="CV.pdf" type="application/pdf"></object>
+          <a href="CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="Entypo+/Entypo+/download.svg" class="middle text-center" width="35" height="45" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"><br/>Télécharger</a>
+          <object class="cv" data="CV.pdf" type="application/pdf">
+            <embed src="CV.pdf" type="application/pdf" />
+          </object>
         </div>
       </div>
 
@@ -86,7 +88,7 @@
   <section class="gris back container-fluid">
     <h2 class="sous_menus" id="competences">Compétences</h2>
 
-    <table class="table table-hover table-light table-bordered">
+    <table class="table table-hover table-light table-bordered table-justify table-responsive">
       <thead>
         <tr class="table-dark">
           <th scope="col" class="text-center">Language</th>
@@ -164,32 +166,33 @@
         <div class="row">
           <div class="col">
             <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
-            <input type="text" class="form-control" name="prenom" placeholder="Richard">
+            <input type="text" class="form-control" name="prenom" placeholder="Richard" required>
           </div>
           <div class="col">
             <label for="nom" class="col-sm-2 col-form-label"><strong>Nom</strong></label>
-            <input type="text" class="form-control" name="nom" placeholder="Peres">
+            <input type="text" class="form-control" name="nom" placeholder="Peres" required>
           </div>
         </div><br/>
         <div class="form-group row">
           <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" name="email" placeholder="richardperes.info@gmail.com">
+            <input type="email" class="form-control" name="email" placeholder="richardperes.info@gmail.com" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="objet" class="col-sm-2 col-form-label"><strong>Objet</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="objet" placeholder="Proposition post">
+            <input type="text" class="form-control" name="objet" placeholder="Objet du message" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="message" class="col-sm-2 col-form-label"><strong>Message</strong></label>
           <div class="col-sm-10">
-            <textarea type="text" class="form-control message" name="message" placeholder="Votre message ..."></textarea>
+            <textarea type="text" class="form-control message" name="message" placeholder="Votre message ..." required></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-dark centre">Envoyer</button>
+        <button type="button" class="btn btn-dark btnSend" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
+      <?php include("alertjs.php"); ?>
       </form>
     </div>
   </section>
@@ -205,7 +208,7 @@
  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Bouton alert JS</button>-->
 
 
-  <?php include("alertjs.php"); ?>
+  
 
   <!------------------------------------- SCRIPTS ------------------------------------------------------->
 
@@ -242,7 +245,6 @@
       });
       $('[data-toggle="tooltip"]').tooltip()
     })
-
   </script>
   <!-- Animation scrolling-->
   <script type="text/javascript">
@@ -253,7 +255,6 @@
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 1000);
     });
-
   </script>
   <!-- Changement de fond-->
   <script type="text/javascript">
@@ -270,7 +271,6 @@
         logo.src = "code.svg";
       }
     }
-
   </script>
 
 </body>

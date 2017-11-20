@@ -3,17 +3,17 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Titre  alert JS</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Confirmation d'envoie</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-           Corp du message de l'alert JS.
+           Etes vous sûr de vouloir envoyez ce message ?
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="submit" class="btn btn-primary">Confirmer</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
           </div>
         </div>
       </div>

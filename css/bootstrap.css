@@ -36,9 +36,28 @@
   background-color: white;
   padding: 3vh 5vh 5vh 5vh;
 }
+  
+  .btnSend {
+  display: block ;
+  margin-top: 4vh ;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding: 1vh 2vh 1vh 2vh;
+}
+  
+  .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
+}
 }
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   .titre {
     font-size: 5rem;
     font-weight: 300;
@@ -68,6 +87,25 @@
   margin-right: auto;
   background-color: white;
   padding: 3vh 5vh 5vh 5vh;
+}
+  
+  .btnSend {
+  display: block !important;
+  margin-top: 4vh !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1vh 8vh 1vh 8vh!important;
+}
+  
+  .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
 }
 }
 
@@ -103,6 +141,25 @@
   background-color: white;
   padding: 3vh 5vh 5vh 5vh;
 }
+  
+  .btnSend {
+  display: block !important;
+  margin-top: 4vh !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1vh 8vh 1vh 8vh!important;
+}
+  
+  .table {
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
+}
 }
 
 @media (min-width: 768px) {
@@ -136,6 +193,25 @@
   margin-right: auto;
   background-color: white;
   padding: 3vh 5vh 5vh 5vh;
+}
+  
+  .btnSend {
+  display: block !important;
+  margin-top: 4vh !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1vh 8vh 1vh 8vh!important;
+}
+  
+  .table {
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
 }
 }
 
@@ -171,6 +247,25 @@
   margin-right: auto;
   background-color: white;
   padding: 5vh 10vh 7vh 10vh;
+}
+  
+  .btnSend {
+  display: block !important;
+  margin-top: 4vh !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1vh 8vh 1vh 8vh!important;
+}
+  
+  .table {
+  width: 100%;
+  max-width: 95% !important;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
 }
 }
 
@@ -208,7 +303,27 @@
   background-color: white;
   padding: 5vh 10vh 7vh 10vh;
 }
+  
+  .btnSend {
+  display: block !important;
+  margin-top: 4vh !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1vh 8vh 1vh 8vh!important;
 }
+
+.table {
+  width: 100%;
+  max-width: 95%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
+}
+}
+
 
 .gris {
   background-color: #f2f2f2;
@@ -276,13 +391,7 @@
   vertical-align: middle!important;
 }
 
-.centre {
-  display: block !important;
-  margin-top: 4vh !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding: 1vh 8vh 1vh 8vh!important;
-}
+
 
 .nom {
   margin: 0;
@@ -347,6 +456,17 @@
   width: 15%;
   text-align: justify;
 }
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+  color: black;
+}
+
 
 nav .nom2:hover {
   color: black;
@@ -1785,17 +1905,6 @@ pre code {
     -ms-flex-order: 12;
     order: 12;
   }
-}
-
-.table {
-  width: 100%;
-  max-width: 90%;
-  margin-bottom: 1rem;
-  background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
-  color: black;
 }
 
 .table th,
