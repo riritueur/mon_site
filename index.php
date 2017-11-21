@@ -4,10 +4,10 @@
 <html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <?php include("/include/meta.php"); ?>
+  <?php include("include/meta.php"); ?>
 
   <link rel="stylesheet" href="css/bootstrap.css">
-<link rel="shortcut icon" href="media/illuicon.gif" />  
+
   <title class="nom">Profil Richard Peres</title>
 </head>
 

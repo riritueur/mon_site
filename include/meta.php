@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" media="screen and (max-width: 1600px)" href="style_tel.css" />
-<link rel="shortcut icon" href="/ressource/icon/code.png" />
+<link rel="shortcut icon" href="ressource/icon/code.png" />
 
 
 <meta name="Auteur" content="Richard Peres" />
