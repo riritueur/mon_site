@@ -12,7 +12,7 @@
 
 <meta property="og:site_name" content="Richard PERES" />
 <meta property="og:url" content="http://richard-peres.xyz" />
-<meta property="og:title" content="Profil Richard PERES" />
+<meta property="og:title" content="Richard PERES" />
 <meta property="og:image" content="ressource/icon/code.svg" />
 <meta property="og:description" content="Bienvenue sur le profil de Richard PERES, étudiant en informatique. Retrouvez en détail mon profil professionnel et n'hésitez pas à me contacter pour toute information." />
 
