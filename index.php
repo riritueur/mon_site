@@ -13,7 +13,7 @@
 
 <body>
 
-  <!------- Navbar ------->
+  <!-- ===== Navbar ===== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <a class="navbar-brand" href="#">
@@ -48,23 +48,26 @@
     </div>
   </nav>
 
-  <!------- Home ------->
+  <!-- ===== Home ===== -->
   <section class="home container-fluid" id="hom">
     <h1 class="titre">Richard Peres</h1>
     <p class="soustitre">Informaticien en devenir</p>
   </section>
 
-  <!------- A propos ------->
+  <!-- ===== A propos ===== -->
   <section>
     <div class="container-fluid">
       <br/>
-      <!-- Image centré -->
-      <img src="ressource/image/moi2.jpg" class="photo mx-auto d-block" alt="logo" height="200px" width="200px" id="apropos">
+      <!-- ===== Image centré ===== -->
+      <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="logo" height="200" width="200" id="apropos">
+      
       <h2 class="sous_menus">À propos</h2>
+      
+      <!-- ===== Description ===== -->
       <p class="border border-secondary rounded description">Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2015.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la facon de penser, d'organiser et de prédire les actions que de simples lignes de codes peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuel est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère.</p>
       <br><br>
 
-      <!-- Collapse CV -->
+      <!-- ===== Collapse CV ===== -->
       <button class="btn btn-dark btnCV" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
         Mon CV
       </button>
@@ -79,15 +82,15 @@
         </div>
       </div>
 
-      <br><br><br>
+      <br/><br/><br/>
     </div>
   </section>
 
-  <!------- Compétences ------->
-  <section class="back container-fluid">
-    <h2 class="sous_menus" id="competences">Compétences</h2>
-
-    <!-- Tableau des compétences -->
+  <!-- ===== Compétences ===== -->
+  <section class="back container-fluid" id="competences">
+    <h2 class="sous_menus">Compétences</h2>
+    <br/>
+    <!-- ===== Tableau des compétences ===== -->
     <table class="table table-hover table-light table-bordered table-justify table-responsive">
       <thead>
         <tr class="table-dark">
@@ -156,39 +159,39 @@
     </table>
   </section>
 
-  <!------- Contact ------->
-  <section class="container-fluid contactSection">
+  <!-- ===== Contact ===== -->
+  <section class="container-fluid contactSection" id="contact">
     <br/><br/>
-    <h2 class="sous_menus" id="contact">Contact</h2>
+    <h2 class="sous_menus">Contact</h2>
     <div class="contact border border-secondary rounded">
       <p class="text-center preform">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
       <form action="include/mailing.php" method="post">
         <div class="row">
           <div class="col">
             <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
-            <input type="text" class="form-control" name="prenom" placeholder="Richard" required>
+            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Richard" required>
           </div>
           <div class="col">
             <label for="nom" class="col-sm-2 col-form-label"><strong>Nom</strong></label>
-            <input type="text" class="form-control" name="nom" placeholder="Peres" required>
+            <input type="text" class="form-control" name="nom" id="nom" placeholder="Peres" required>
           </div>
         </div><br/>
         <div class="form-group row">
           <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" name="email" placeholder="richardperes.info@gmail.com" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="richardperes.info@gmail.com" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="objet" class="col-sm-2 col-form-label"><strong>Objet</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="objet" placeholder="Objet du message" required>
+            <input type="text" class="form-control" name="objet" id="objet" placeholder="Objet du message" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="message" class="col-sm-2 col-form-label"><strong>Message</strong></label>
           <div class="col-sm-10">
-            <textarea type="text" class="form-control message" name="message" placeholder="Votre message ..." required></textarea>
+            <textarea class="form-control message" name="message" id="message" placeholder="Votre message ..." required></textarea>
           </div>
         </div>
         <button type="button" class="btn btn-dark btnSend" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
@@ -197,16 +200,14 @@
     </div>
   </section>
 
-  <!------- Footer ------->
+  <!-- ===== Footer ===== -->
   <footer class="fin">
     <blockquote class="blockquote text-center white">
       <p class="mb-0">Site réalisé exclusivement par Richard Peres.<br/>Ce site reprend des éléments de style issus de <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.<br/><br/></p>
-      <footer class="blockquote-footer">© Copyright 2017 - <cite title="Source Title">Richard PERES</cite></footer>
+      <p class="blockquote-footer">© Copyright 2017 - <cite title="Source Title">Richard PERES</cite></p>
     </blockquote>
   </footer>
-
-</body>
-
 <?php include("include/scripts.php") ?>
+</body>
 
 </html>
