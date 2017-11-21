@@ -4,6 +4,25 @@
 <html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGVHK87');
+
+  </script>
+  <!-- End Google Tag Manager -->
   <?php include("include/meta.php"); ?>
 
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,6 +31,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGVHK87"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ===== Navbar ===== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,9 +83,9 @@
       <br/>
       <!-- ===== Image centré ===== -->
       <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="logo" height="200" width="200" id="apropos">
-      
+
       <h2 class="sous_menus">À propos</h2>
-      
+
       <!-- ===== Description ===== -->
       <p class="border border-secondary rounded description">Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2015.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la facon de penser, d'organiser et de prédire les actions que de simples lignes de codes peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuel est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère.</p>
       <br><br>
@@ -207,7 +230,7 @@
       <p class="blockquote-footer">© Copyright 2017 - <cite title="Source Title">Richard PERES</cite></p>
     </blockquote>
   </footer>
-<?php include("include/scripts.php") ?>
+  <?php include("include/scripts.php") ?>
 </body>
 
 </html>
