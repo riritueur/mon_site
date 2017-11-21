@@ -7,15 +7,77 @@
 
 @media (min-width: 100px) {
   .titre {
-    font-size: 4rem;
+    font-size: 2.75rem;
     font-weight: 300;
     line-height: 1.1;
     color: #f2f2f2;
   }
   .soustitre {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 300;
     color: #cccccc;
+  }
+
+  .photo {
+    height: 125px !important;
+    width: 125px !important;
+  }
+
+  .description {
+    margin-left: 3vh;
+    margin-right: 3vh;
+    display: block;
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 4vh;
+    background-color: #f9f9f9;
+    text-align: justify;
+  }
+
+  .contact {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 3vh 5vh 5vh 5vh;
+  }
+
+  .btnSend {
+    display: block;
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vh 2vh 1vh 2vh;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0 0.1rem rgba(200, 200, 200, 0.85);
+    color: black;
+  }
+}
+
+@media (min-width: 200px) {
+  .titre {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #f2f2f2;
+  }
+  .soustitre {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #cccccc;
+  }
+
+  .photo {
+    height: 125px !important;
+    width: 125px !important;
   }
 
   .description {
@@ -59,15 +121,20 @@
 
 @media (min-width: 320px) {
   .titre {
-    font-size: 5rem;
+    font-size: 4.75rem;
     font-weight: 300;
     line-height: 1.1;
     color: #f2f2f2;
   }
   .soustitre {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     color: #cccccc;
+  }
+
+  .photo {
+    height: 125px !important;
+    width: 125px !important;
   }
 
   .description {
@@ -364,6 +431,8 @@
   -moz-border-radius: 50px;
   border-radius: 100px;
   border: 3px solid grey;
+  height: 200px;
+  width: 200px;
 }
 
 .logo {

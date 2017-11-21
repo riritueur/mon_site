@@ -59,7 +59,7 @@
     <div class="container-fluid">
       <br/>
       <!-- ===== Image centré ===== -->
-      <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="logo" height="200" width="200" id="apropos">
+      <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="moi" id="apropos">
 
       <h2 class="sous_menus">À propos</h2>
 
@@ -75,10 +75,12 @@
       <div class="collapse" id="CV">
         <br/>
         <div class="card card-body">
-          <a href="CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="ressource/icon/download.svg" class="middle text-center" width="35" height="45" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"><br/>Télécharger</a>
+          <a href="ressource/document/CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="ressource/icon/download.svg" class="middle text-center" width="35" height="45" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"><br/>Télécharger</a>
           <object class="cv" data="ressource/document/CV.pdf" type="application/pdf">
-            <embed src="CV.pdf" type="application/pdf" />
+            <embed src="ressource/document/CV.pdf" type="application/pdf" />
           </object>
+          <br/>
+          <p class="text-center">(s'il ne s'affiche pas vous pouvez le consulter<a href="ressource/document/CV.pdf" class="dl">ici</a>)</p>
         </div>
       </div>
 
