@@ -16,8 +16,8 @@
   <!------- Navbar ------->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a class="navbar-brand" href="http://localhost/Mon_Site">
-          <img src="code.svg" class="logo" width="45" height="45" alt="Logo" id="logo">
+    <a class="navbar-brand" href="#">
+          <img src="ressource/icon/code.svg" class="logo" width="45" height="45" alt="Logo" id="logo">
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -59,9 +59,8 @@
     <div class="container-fluid">
       <br/>
       <!-- Image centré -->
-      <img src="Durif_8.jpg" class="photo mx-auto d-block" alt="logo" height="200px" width="200px" id="apropos">
-      <!-- Hover tooltip -->
-      <h2 class="sous_menus" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici">À propos</h2>
+      <img src="ressource/image/moi2.jpg" class="photo mx-auto d-block" alt="logo" height="200px" width="200px" id="apropos">
+      <h2 class="sous_menus">À propos</h2>
       <p class="border border-secondary rounded description">Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2015.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la facon de penser, d'organiser et de prédire les actions que de simples lignes de codes peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuel est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère.</p>
       <br><br>
 
@@ -85,7 +84,7 @@
   </section>
 
   <!------- Compétences ------->
-  <section class="gris back container-fluid">
+  <section class="back container-fluid">
     <h2 class="sous_menus" id="competences">Compétences</h2>
 
     <!-- Tableau des compétences -->
@@ -163,7 +162,7 @@
     <h2 class="sous_menus" id="contact">Contact</h2>
     <div class="contact border border-secondary rounded">
       <p class="text-center preform">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
-      <form action="/include/mailing.php" method="post">
+      <form action="include/mailing.php" method="post">
         <div class="row">
           <div class="col">
             <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
@@ -193,7 +192,7 @@
           </div>
         </div>
         <button type="button" class="btn btn-dark btnSend" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
-        <?php include("/js/script_alertjs.php"); ?>
+        <?php include("js/script_alertjs.php"); ?>
       </form>
     </div>
   </section>
