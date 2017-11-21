@@ -15,3 +15,13 @@
 <meta property="og:title" content="Profil Richard PERES" />
 <meta property="og:image" content="ressource/icon/code.svg" />
 <meta property="og:description" content="Bienvenue sur le profil de Richard PERES, étudiant en informatique. Retrouvez en détail mon profil professionnel et n'hésitez pas à me contacter pour toute information." />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88463922-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88463922-2');
+</script>
