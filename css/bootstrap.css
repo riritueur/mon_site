@@ -2498,16 +2498,7 @@ select.form-control-lg:not([size]):not([multiple]),
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .form-control:valid ~ .invalid-feedback,
-.was-validated .form-control:valid ~ .invalid-tooltip,
-.form-control.is-valid ~ .invalid-feedback,
-.form-control.is-valid ~ .invalid-tooltip,
-.was-validated .custom-select:valid ~ .invalid-feedback,
-.was-validated .custom-select:valid ~ .invalid-tooltip,
-.custom-select.is-valid ~ .invalid-feedback,
-.custom-select.is-valid ~ .invalid-tooltip {
-  display: block;
-}
+
 
 .was-validated .form-check-input:valid + .form-check-label,
 .form-check-input.is-valid + .form-check-label {

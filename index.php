@@ -167,33 +167,48 @@
     <h2 class="sous_menus">Contact</h2>
     <div class="contact border border-secondary rounded">
       <p class="text-center preform">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
-      <form action="include/mailing.php" method="post">
+      <form action="include/mailing.php" method="post" id="needs-validation" novalidate>
         <div class="row">
           <div class="col">
-            <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
-            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Richard" required>
+            <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom *</strong></label>
+            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Richard" pattern="[A-z-]{2,25}" required>
+            <div class="invalid-feedback">
+            Champ invalide
+            </div>
           </div>
           <div class="col">
-            <label for="nom" class="col-sm-2 col-form-label"><strong>Nom</strong></label>
-            <input type="text" class="form-control" name="nom" id="nom" placeholder="Peres" required>
+            <label for="nom" class="col-sm-2 col-form-label"><strong>Nom *</strong></label>
+            <input type="text" class="form-control" name="nom" id="nom" placeholder="Peres" pattern="[A-z-]{2,25}" required>
+            <div class="invalid-feedback">
+            Champ invalide
+            </div>
           </div>
         </div><br/>
         <div class="form-group row">
-          <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
+          <label for="email" class="col-sm-2 col-form-label"><strong>Email *</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" name="email" id="email" placeholder="richardperes.info@gmail.com" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="richardperes.info@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <div class="invalid-feedback">
+            Adresse invalide
+            </div>
           </div>
         </div>
         <div class="form-group row">
-          <label for="objet" class="col-sm-2 col-form-label"><strong>Objet</strong></label>
+          <label for="objet" class="col-sm-2 col-form-label"><strong>Objet *</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="objet" id="objet" placeholder="Objet du message" required>
+            <input type="text" class="form-control" name="objet" id="objet" placeholder="Objet du message" pattern=".{4,25}" required>
+            <div class="invalid-feedback">
+            Champ invalide
+            </div>
           </div>
         </div>
         <div class="form-group row">
-          <label for="message" class="col-sm-2 col-form-label"><strong>Message</strong></label>
+          <label for="message" class="col-sm-2 col-form-label"><strong>Message *</strong></label>
           <div class="col-sm-10">
-            <textarea class="form-control message" name="message" id="message" placeholder="Votre message ..." required></textarea>
+            <textarea class="form-control message" name="message" id="message" placeholder="Votre message ..." required minlength="10" maxlength="1000"></textarea>
+            <div class="invalid-feedback">
+            Champ invalide
+            </div>
           </div>
         </div>
         <button type="button" class="btn btn-dark btnSend" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
