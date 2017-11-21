@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 
 
-<html lang="fr">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <?php include("/include/meta.php"); ?>
 
   <link rel="stylesheet" href="css/bootstrap.css">
-
+<link rel="shortcut icon" href="media/illuicon.gif" />  
   <title class="nom">Profil Richard Peres</title>
 </head>
 
 <body>
 
-
-
+  <!------- Navbar ------->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <a class="navbar-brand" href="http://localhost/Mon_Site">
@@ -50,13 +48,13 @@
     </div>
   </nav>
 
-
+  <!------- Home ------->
   <section class="home container-fluid" id="hom">
     <h1 class="titre">Richard Peres</h1>
-    <p class="soustitre">Bienvenue sur mon profil.</p>
+    <p class="soustitre">Informaticien en devenir</p>
   </section>
 
-
+  <!------- A propos ------->
   <section>
     <div class="container-fluid">
       <br/>
@@ -64,9 +62,10 @@
       <img src="Durif_8.jpg" class="photo mx-auto d-block" alt="logo" height="200px" width="200px" id="apropos">
       <!-- Hover tooltip -->
       <h2 class="sous_menus" onclick="fond()" data-toggle="tooltip" data-placement="bottom" title="Ca change aussi le fond ici">À propos</h2>
-      <span class="border border-secondary rounded description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.<br/><br/>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</span>
+      <p class="border border-secondary rounded description">Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2015.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la facon de penser, d'organiser et de prédire les actions que de simples lignes de codes peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuel est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère.</p>
       <br><br>
 
+      <!-- Collapse CV -->
       <button class="btn btn-dark btnCV" type="button" data-toggle="collapse" data-target="#CV" aria-expanded="false" aria-controls="CV">
         Mon CV
       </button>
@@ -74,8 +73,8 @@
       <div class="collapse" id="CV">
         <br/>
         <div class="card card-body">
-          <a href="CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="Entypo+/Entypo+/download.svg" class="middle text-center" width="35" height="45" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"><br/>Télécharger</a>
-          <object class="cv" data="CV.pdf" type="application/pdf">
+          <a href="CV.pdf" class="dl" download="CV_PERES_Richard.pdf"><img src="ressource/icon/download.svg" class="middle text-center" width="35" height="45" alt="dl_cv" id="dl_cv" data-toggle="tooltip" data-placement="right" title="Télécharger au format PDF"><br/>Télécharger</a>
+          <object class="cv" data="ressource/document/CV.pdf" type="application/pdf">
             <embed src="CV.pdf" type="application/pdf" />
           </object>
         </div>
@@ -85,9 +84,11 @@
     </div>
   </section>
 
+  <!------- Compétences ------->
   <section class="gris back container-fluid">
     <h2 class="sous_menus" id="competences">Compétences</h2>
 
+    <!-- Tableau des compétences -->
     <table class="table table-hover table-light table-bordered table-justify table-responsive">
       <thead>
         <tr class="table-dark">
@@ -156,13 +157,13 @@
     </table>
   </section>
 
-
+  <!------- Contact ------->
   <section class="container-fluid contactSection">
     <br/><br/>
     <h2 class="sous_menus" id="contact">Contact</h2>
     <div class="contact border border-secondary rounded">
-      <p class="text-center">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
-      <form action="mailing.php" method="post">
+      <p class="text-center preform">Si vous souhaitez me contacter, vous pouvez le faire par <strong data-toggle="tooltip" data-placement="top" title="richardperes.info@gmail.com">mail</strong> ou via ce formulaire.</p>
+      <form action="/include/mailing.php" method="post">
         <div class="row">
           <div class="col">
             <label for="prenom" class="col-sm-2 col-form-label"><strong>Prénom</strong></label>
@@ -192,87 +193,21 @@
           </div>
         </div>
         <button type="button" class="btn btn-dark btnSend" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
-      <?php include("alertjs.php"); ?>
+        <?php include("/js/script_alertjs.php"); ?>
       </form>
     </div>
   </section>
 
-  <footer></footer>
-
-  <!-- Change le fond 
-<button type="button" class="btn btn-outline-dark" onclick="fond()">Change le fond !</button>
--->
-
-
-  <!-- Button alert JS 
- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Bouton alert JS</button>-->
-
-
-  
-
-  <!------------------------------------- SCRIPTS ------------------------------------------------------->
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Animate CSS -->
-  <link href="css/animate.css" rel="stylesheet">
-  <!-- Lettering js -->
-  <script src="js/jquery.lettering.js"></script>
-  <!-- Textillate js -->
-  <script src="js/jquery.textillate.js"></script>
-  <!-- Mon js-->
-  <!-- <script src="script.js"></script> -->
-  <!-- Textillate du titre-->
-  <script type="text/javascript">
-    $(function() {
-      $('.titre').textillate({ in: {
-          effect: 'fadeInLeftBig',
-          delay: 50
-        }
-      });
-      $('.soustitre').textillate({ in: {
-          effect: 'rollIn',
-          delay: 10
-        },
-        out: {
-          effect: 'rollOut',
-          initialDelay: 50,
-          delay: 20
-        },
-        loop: true
-      });
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-  <!-- Animation scrolling-->
-  <script type="text/javascript">
-    $(document).on('click', 'a[href^="#"]', function(event) {
-      event.preventDefault();
-
-      $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-      }, 1000);
-    });
-  </script>
-  <!-- Changement de fond-->
-  <script type="text/javascript">
-    function fond() {
-      var fond1 = document.getElementById("hom");
-      var logo = document.getElementById("logo");
-
-
-      if (fond1.className == "home") {
-        fond1.className = "home2";
-        logo.src = "laptop.svg";
-      } else {
-        fond1.className = "home";
-        logo.src = "code.svg";
-      }
-    }
-  </script>
+  <!------- Footer ------->
+  <footer class="fin">
+    <blockquote class="blockquote text-center white">
+      <p class="mb-0">Site réalisé exclusivement par Richard Peres.<br/>Ce site reprend des éléments de style issus de <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.<br/><br/></p>
+      <footer class="blockquote-footer">© Copyright 2017 - <cite title="Source Title">Richard PERES</cite></footer>
+    </blockquote>
+  </footer>
 
 </body>
+
+<?php include("include/scripts.php") ?>
 
 </html>
