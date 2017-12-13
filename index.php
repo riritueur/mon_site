@@ -8,13 +8,13 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
 
-  <title class="nom">Richard Peres</title>
+  <title class="nom">Profil Richard Peres</title>
 </head>
 
 <body>
 
   <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar border fixed-top navbar-expand-lg navbar-light bg-light">
 
     <a class="navbar-brand" href="#">
           <img src="ressource/icon/code.svg" class="logo" width="45" height="45" alt="Logo" id="logo">
@@ -59,7 +59,7 @@
     <div class="container-fluid">
       <br/>
       <!-- ===== Image centré ===== -->
-      <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="moi" id="apropos">
+      <img src="ressource/image/moi.jpg" class="photo mx-auto d-block" alt="Richard Peres" id="apropos">
 
       <h2 class="sous_menus">À propos</h2>
 

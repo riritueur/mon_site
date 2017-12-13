@@ -454,6 +454,10 @@
 }
 }
 
+.borderNav {
+  border: 1px solid #848383 !important;
+}
+
 .lel {
   max-width: 100vh !important;
 }
