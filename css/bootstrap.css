@@ -554,7 +554,7 @@
   display: block !important;
   margin-left: auto;
   margin-right: auto;
-  padding: 2vh 3vh 2vh 3vh !important;
+  padding: 2vh 6vh 2vh 6vh !important;
 }
 
 .sous_menus::after {
@@ -613,15 +613,31 @@ nav .nom2:hover {
 }
 
 .c {
-  background-color: #8f3d3d !important;
+  background-color: #f4e242 !important;
 }
 
 .titreAlert {
   color: red;
 }
 
+.csharp {
+  background-color: #8f3d3d !important;
+}
 
+.android {
+  background-color: #16a01d !important;
+}
 
+.reso {
+  margin-right: 20px;
+  vertical-align: middle;
+  transition-duration: 0.5s;
+}
+
+.reso:hover {    
+  transition-duration: 0.5s;
+  transform: scale(1.3);
+}
 
 @media print {
   *,
@@ -9076,3 +9092,4 @@ a.text-dark:hover {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
