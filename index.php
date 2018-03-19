@@ -64,7 +64,8 @@
       <h2 class="sous_menus">À propos</h2>
 
       <!-- ===== Description ===== -->
-      <p class="border border-secondary rounded description">Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2015.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la facon de penser, d'organiser et de prédire les actions que de simples lignes de codes peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuel est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère. Mais je reste très ouvert à d'autres domaines tels que le Deep/Machine Learning, l'algorithmique génétique ou encore le Cloud Computing, domaines surlesquels je me renseigne en ce moment.        
+      <p class="border border-secondary rounded description">
+      Bonjour et bienvenue sur mon site !<br/><br/>Passionné par l'univers de l'informatique depuis que j'en connais l'existence, c'est tout naturellement que je me suis orienté vers l'informatique après mon bac scientifique en 2016.<br/><br/>Ce qui me plaît le plus dans l'informatique, c'est la logique qu'il y a derrière, la façon de penser, d'organiser et de prédire les actions que de simples lignes de code peuvent avoir. En plus des cours, j'aime découvrir de nouvelles façons de programmer et de tester toutes les idées qui me passent par la tête.<br/><br/>Mon domaine de prédilection actuelle est sans aucun doute le développement en Java. Que ce soit en "graphique" avec Swing ou simplement programmer des algorithmes complexes ou gérer des évènements, la programmation Java est vraiment l'aspect que je préfère. Mais je reste très ouvert à d'autres domaines tels que le Deep/Machine Learning, l'algorithmique génétique ou encore le Cloud Computing, domaines sur lesquels je me renseigne en ce moment.
       </p>
       <br/>
       <div class="text-center">
@@ -128,8 +129,8 @@
           </td>
         </tr>
         <tr>
-          <td class="text-center middle table-justify"><strong>PhP et JavaScript</strong></td>
-          <td class="text-center  table-justify">Cookies, connection à une base données, animation</td>
+          <td class="text-center middle table-justify"><strong>PHP et JavaScript</strong></td>
+          <td class="text-center  table-justify">MySQL, JQuery, sessions PHP, POO<br/>(exemple <a href="../KatsudoDM">ici</a>)</td>
           <td class="middle">
             <div class="progress">
               <div class="progress-bar php progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><strong>60%</strong></div>
