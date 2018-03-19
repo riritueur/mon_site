@@ -130,7 +130,7 @@
         </tr>
         <tr>
           <td class="text-center middle table-justify"><strong>PHP et JavaScript</strong></td>
-          <td class="text-center  table-justify">MySQL, JQuery, sessions PHP, POO<br/>(exemple <a href="../KatsudoDM">ici</a>)</td>
+          <td class="text-center  table-justify">MySQL, JQuery, sessions PHP, notions AJAX (exemple <a href="http://katsudodm.richard-peres.xyz">ici</a>)</td>
           <td class="middle">
             <div class="progress">
               <div class="progress-bar php progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><strong>60%</strong></div>
@@ -169,7 +169,7 @@
           <td class="text-center table-justify">Scripts C#, Unity 3D</td>
           <td class="middle">
             <div class="progress">
-              <div class="progress-bar csharp  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"><strong>35%</strong></div>
+              <div class="progress-bar csharp  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><strong>45%</strong></div>
             </div>
           </td>
         </tr>
@@ -178,7 +178,7 @@
           <td class="text-center table-justify">Programmation d'application mobile (Android)</td>
           <td class="middle">
             <div class="progress">
-              <div class="progress-bar android  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"><strong>30%</strong></div>
+              <div class="progress-bar android  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><strong>50%</strong></div>
             </div>
           </td>
         </tr>
@@ -246,7 +246,7 @@
   <!-- ===== Footer ===== -->
   <footer class="fin">
     <blockquote class="blockquote text-center white">
-      <p class="mb-0">Site réalisé exclusivement par Richard Peres.<br/>Ce site reprend des éléments de style issus de <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.<br/><br/></p>
+      <p class="mb-0">Site réalisé exclusivement par Richard Peres.<br/>Ce site reprend des éléments de style (CSS) issus de <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.<br/><br/></p>
       <p class="blockquote-footer">© Copyright 2017 - <cite title="Source Title">Richard PERES</cite></p>
     </blockquote>
   </footer>
